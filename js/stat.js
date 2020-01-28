@@ -42,7 +42,7 @@ window.renderStatistics = function (ctx, players, times) {
     ctx.fillStyle = players[i] === 'Вы' ? 'rgba(255, 0, 0, 1)' : 'hsl(240, ' + Math.floor(Math.random() * 101) + '%, 50%)';
     ctx.fillRect(CLOUD_X + GAP_BETWEEN_COLUMN + (GAP_BETWEEN_COLUMN + BAR_WIDTH) * i, CLOUD_Y + CLOUD_HEIGHT - TEXT_HEIGHT * 2 - (barHeight * times[i] / maxTime), BAR_WIDTH, (barHeight * times[i] / maxTime));
   }
-  ctx.font = '16px PT Mono'
+  ctx.font = '16px PT Mono';
   ctx.fillStyle = '#000';
   ctx.fillText('Ура вы победили !', CLOUD_X + GAP_TEXT, CLOUD_Y + GAP_TEXT_TOP);
   ctx.fillText('Список результатов :', CLOUD_X + GAP_TEXT, CLOUD_Y + GAP_TEXT_TOP + TEXT_HEIGHT);
