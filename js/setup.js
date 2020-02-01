@@ -17,14 +17,14 @@ var similarWizardTemplate = document.querySelector('#similar-wizard-template')
 
 var wizards = [];
 for (var i = 0; i < wizardCount; i++) {
-  var wizardNameIndex = Math.floor(Math.random() * WIZARD_NAMES.length);
-  var wizardSurnameIndex = Math.floor(Math.random() * WIZARD_SURNAMES.length);
+  var wizardNameIndex = Math.floor (Math.random() * WIZARD_NAMES.length);
+  var wizardSurnameIndex = Math.floor (Math.random() * WIZARD_SURNAMES.length);
   var name = WIZARD_NAMES[wizardNameIndex] + ' ' + WIZARD_SURNAMES[wizardSurnameIndex];
 
-  var coatColorIndex = Math.floor(Math.random() * coatColors.length);
+  var coatColorIndex = Math.floor (Math.random() * coatColors.length);
   var coatColor = coatColors[coatColorIndex];
 
-  var eyesColorIndex = Math.floor(Math.random() * eyesColors.length);
+  var eyesColorIndex = Math.floor (Math.random() * eyesColors.length);
   var eyesColor = eyesColors[eyesColorIndex];
 
   wizards[i] = {
@@ -44,8 +44,8 @@ var renderWizard = function (wizard) {
   return wizardElement;
 }
 
-var fragment = document.createDocumentFragment();
-for (var i = 0; i < wizards.length; i++) {
+  var fragment = document.createDocumentFragment();
+  for (var i = 0; i < wizards.length; i++) {
   fragment.appendChild(renderWizard(wizards[i]));
 }
 similarListElement.appendChild(fragment);
