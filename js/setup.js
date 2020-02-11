@@ -28,9 +28,9 @@ for (var i = 0; i < WIZARD_COUNT; i++) {
   var eyesColor = eyesColors[eyesColorIndex];
 
   wizards[i] = {
-    name,
-    coatColor,
-    eyesColor,
+    'name': name,
+    'coatColor': coatColor,
+    'eyesColor': eyesColor,
   };
 }
 
